@@ -8,14 +8,14 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - _TODO: Enter the playbook file._
 
-This document contains the following details:
-- Description of the Topology
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
-
+- Ansible Playbook
+- Ansible Hosts
+- Ansible Configuration
+- Ansible ELK Installation and VM Configuration
+- Ansible Filebeat Playbook
+- Ansible Filebeat Config file
+- Ansible Metricbeat Playbook
+- Ansible Metricbeat Config file
 
 ### Description of the Topology
 
