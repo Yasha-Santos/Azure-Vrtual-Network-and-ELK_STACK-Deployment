@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - Ansible Playbook
 - Ansible Hosts
 - Ansible Configuration
-- Ansible ELK Installation and VM Configuration
+- [Ansible ELK Installation and VM Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml)
 - Ansible Filebeat Playbook
 - Ansible Filebeat Config file
 - Ansible Metricbeat Playbook
