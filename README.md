@@ -15,6 +15,15 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - [Ansible Metricbeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml)
 - [Ansible Metricbeat Config file](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)
 
+This documents contains the following details:
+
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+Beats in Use
+Machines Being Monitored
+- How to Use the Ansible Build
+
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
