@@ -201,11 +201,11 @@ The key's randomart image is:
 
 `sudo systemctl status docker`
 
-  -If its not started yet start it using the command:
+**If its not started yet start it using the command:**
   
 `sudo systemctl start docker`
 
-*You should have something like this*
+**You should have something like this**
 
 ```
   docker.service - Docker Application Container Engine
