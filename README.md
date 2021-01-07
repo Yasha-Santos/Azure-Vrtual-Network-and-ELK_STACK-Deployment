@@ -131,7 +131,7 @@ SSH into the control node and follow the steps below:
 - Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add pyhton by using the command 'ansible_python_interpreter=/usr/bin/python3'
 - Run the playbook, and navigate to **WorkstationIP":5601** (Kibana) to check that the installation worked as expected.
 
-###Questions
+### Questions
 
 - _Which file is the playbook? 
 
