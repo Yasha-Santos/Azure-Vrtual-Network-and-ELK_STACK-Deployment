@@ -6,14 +6,14 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml and config file may be used to install only certain pieces of it, such as Filebeat.
 
-- [Ansible Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml)
-- [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts)
-- [Ansible Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ansible.cfg)
-- [Ansible ELK Installation and VM Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml)
-- [Ansible Filebeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml)
-- [Ansible Filebeat Config file](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/Filebeat-config.yml)
-- [Ansible Metricbeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml)
-- [Ansible Metricbeat Config file](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)
+- [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml)
+- [Ansible Hosts File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts)
+- [Ansible Configuration File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ansible.cfg)
+- [Ansible ELK Installation and VM Configuration File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml)
+- [Ansible Filebeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml)
+- [Ansible Filebeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/Filebeat-config.yml)
+- [Ansible Metricbeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml)
+- [Ansible Metricbeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)
 
 #### This document contains the following details:
 
@@ -41,12 +41,12 @@ The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1 / 104.42.213.223    | Linux            |
-| Elk-1     |  Elk Server | 10.1.0.4 / 52.188.1.16   | Linux            |
-| Web1    |      Web Server              | 10.0.0.10 |   Linux           |
-| Web2     |       Web Server            | 10.0.0.9   |   Linux           |
-|  Workstation  |      Access Control      |  Public IP   |   Linux       |
-|  Load Balancer     |  Load Balancer  |    Static Public IP    | Linux |
+| Jump Box | Gateway  | 10.0.0.1 / 104.42.213.223    | Linux    |
+| Elk-1     |  Elk Server | 10.1.0.4 / 52.188.1.16   | Linux    |
+| Web1    |      Web Server              | 10.0.0.10 | Linux    |
+| Web2     |       Web Server            | 10.0.0.9  | Linux    |
+|  Workstation  |      Access Control    | Public IP | Linux    |
+|  Load Balancer  |  Load Balancer  |  Static Public IP | Linux |
 
 - Follow this step below to create a Load Balancer for Web1 and Web2
 
@@ -193,7 +193,7 @@ The key's randomart image is:
 ```
 **IMPORTANT** This newly generated SSH key has to be added on every VM that youre going to use, Jump-Box, Web1, Etc.
 
-###Install Docker if you dont have it already
+### Install Docker if you dont have it already
 
 `sudo apt-get install -y docker-ce`
 
@@ -201,6 +201,25 @@ The key's randomart image is:
 
 `sudo systemctl status docker`
 
-  -*If its not started yet use the command:*
+  -If its not started yet start it using the command:
   
 `sudo systemctl start docker`
+
+*You should have something like this*
+
+```
+  docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2018-10-18 20:28:23 UTC; 35s ago
+     Docs: https://docs.docker.com
+ Main PID: 13412 (dockerd)
+   CGroup: /system.slice/docker.service
+           ├─13412 /usr/bin/dockerd -H fd://
+           └─13421 docker-containerd --config /var/run/docker/containerd/containerd.toml
+ ```
+ 
+### Download the ELK container from the repository usiing the command:
+
+`sudo docker pull cyberxsecurity/elk`
+
+
