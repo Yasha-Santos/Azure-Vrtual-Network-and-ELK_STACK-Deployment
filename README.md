@@ -162,7 +162,7 @@ You navigate into /etc/ansible you edit the hosts file using 'nano hosts' and th
 http://(your Public IP):5601/app/kibana
 
 
-# Small Guide into how to deploy the azure and ELK_STACK into thr VM's
+# Small Guide into azure and ELK_STACK deployment into the VM's
 
 **Generating a new SHH-Key**
 
