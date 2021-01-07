@@ -168,7 +168,7 @@ http://(your Public IP):5601/app/kibana
 
 **The output of this command should look like this:**
 
-Generating public/private rsa key pair.
+```Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Yaser/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
