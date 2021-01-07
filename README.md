@@ -143,9 +143,9 @@ SSH into the control node and follow the steps below:
 - **Metricbeat**
   - [Ansible Metricbeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml)
 
-Where do you copy it?
+Where do you copy it to?
 
-/etc/ansible/files
+ `/etc/ansible/files`
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? 
 
