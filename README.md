@@ -95,9 +95,9 @@ The playbook implements the following tasks:
 
 - Install the following services:
 
-   `docker.io`
-   `python3-pip`
-   `docker`, which is the Docker Python pip module.
+`docker.io`
+`python3-pip`
+`docker`, which is the Docker Python pip module.
    
 - Launching and Exposing the container with these published ports:
 
