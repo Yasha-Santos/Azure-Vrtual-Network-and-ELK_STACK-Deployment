@@ -191,5 +191,16 @@ The key's randomart image is:
 |@B=              |
 +----[SHA256]-----+
 ```
+**IMPORTANT** This newly generated SSH key has to be added on every VM that youre going to use, Jump-Box, Web1, Etc.
 
+###Install Docker if you dont have it already
 
+`sudo apt-get install -y docker-ce`
+
+**Start it and check it if its running** 
+
+`sudo systemctl status docker`
+
+  -*If its not started yet use the command:*
+  
+`sudo systemctl start docker`
