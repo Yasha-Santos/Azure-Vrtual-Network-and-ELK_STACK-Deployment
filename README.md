@@ -69,6 +69,7 @@ A summary of the access policies in place can be found in the table below.
 |  Web2        |      No               |    10.0.0.5 (Jump-Box VM) SSH port 22   |
 | ELK Server |       No              | Workstation Public IP on TCP 5601    |
 | Load Balancer |    No           | Workstation Public IP on HTTP 80 |
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows IT administrators to automate away the hard work from their daily tasks, meaning that it gives them more time to focus on efforts that help deliver more value to the business by spending time on more important tasks.
@@ -77,20 +78,20 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 - Specify a different group of machines as well as a different remote user
 
-  name: Config elk VM with Docker
+  `name: Config elk VM with Docker
     hosts: elk
     remote_user: sysadmin
     become: true
-    tasks:
+    tasks:`
 
 - Increase System Memory :
 
- name: Use more memory
+ `name: Use more memory
   sysctl:
     name: vm.max_map_count
     value: '262144'
     state: present
-    reload: yes
+    reload: yes`
 
 - Install the following services:
 
@@ -128,7 +129,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the [Ansible ELK Installation and VM Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml) file to **/etc/ansible/files.
-- Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add pyhton by using the command 'ansible_python_interpreter=/usr/bin/python3'
+- Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add pyhton by using the command `ansible_python_interpreter=/usr/bin/python3`
 - Run the playbook, and navigate to **WorkstationIP":5601** (Kibana) to check that the installation worked as expected.
 
 ### Questions
