@@ -168,26 +168,26 @@ http://(your Public IP):5601/app/kibana
 
 **The output of this command should look like this**
 
- `Generating public/private rsa key pair.
- Enter file in which to save the key (/c/Users/Yaser/.ssh/id_rsa):
- Enter passphrase (empty for no passphrase):
- Enter same passphrase again:
- Your identification has been saved in /c/Users/Yaser/.ssh/id_rsa
- Your public key has been saved in /c/Users/Yaser/.ssh/id_rsa.pub
- The key fingerprint is:
- SHA256:SzAoxEUM5CqMvK3K6vBhjpvnCZkaRB/P8DQwadFbGrs Yaser@DESKTOP-4QJJV0L
- The key's randomart image is:
- +---[RSA 3072]----+
- | o+O*            |
- | o.o++ .         |
- | .+o.oO          |
- |=...B+.o         |
- |++ . +. S        |
- |ooo  E . .       |
- |*.o.    .        |
- |+Ooo             |
- |@B=              |
- +----[SHA256]-----+`
+`Generating public/private rsa key pair.`
+`Enter file in which to save the key (/c/Users/Yaser/.ssh/id_rsa):`
+`Enter passphrase (empty for no passphrase):`
+`Enter same passphrase again:`
+`Your identification has been saved in /c/Users/Yaser/.ssh/id_rsa`
+`Your public key has been saved in /c/Users/Yaser/.ssh/id_rsa.pub`
+`The key fingerprint is:`
+`SHA256:SzAoxEUM5CqMvK3K6vBhjpvnCZkaRB/P8DQwadFbGrs Yaser@DESKTOP-4QJJV0L`
+`The key's randomart image is:`
+`+---[RSA 3072]----+`
+`| o+O*            |`
+`| o.o++ .         |`
+`| .+o.oO          |`
+`|=...B+.o         |`
+`|++ . +. S        |`
+`|ooo  E . .       |`
+`|*.o.    .        |`
+`|+Ooo             |`
+`|@B=              |`
+`+----[SHA256]-----+`
 
 
 
