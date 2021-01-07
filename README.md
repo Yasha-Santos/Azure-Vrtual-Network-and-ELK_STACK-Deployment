@@ -157,12 +157,12 @@ How do I specify which machine to install the ELK server on versus which to inst
 
 You navigate into /etc/ansible you edit the hosts file using 'nano hosts' and then add your vms ip using the command "Web1/Web2 private ip" ansible_python_interpreter=/usr/bin/python3 and then save it  
 
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which URL do you navigate to in order to check that the ELK server is running?
 
 http://(your Public IP):5601/app/kibana
 
 
-#Small Guide into how to deploy the azure and ELK_STACK into thr VM's
+# Small Guide into how to deploy the azure and ELK_STACK into thr VM's
 
 **Generating a new SHH-Key**
 
