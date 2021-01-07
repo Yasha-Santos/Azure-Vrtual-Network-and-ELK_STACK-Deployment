@@ -100,8 +100,8 @@ python3-pip
 docker, which is the Docker Python pip module.
 ```   
 - Launching and Exposing the container with these published ports:
-
- ```5601:5601 
+```
+ 5601:5601 
  9200:9200
  5044:5044
 ``` 
