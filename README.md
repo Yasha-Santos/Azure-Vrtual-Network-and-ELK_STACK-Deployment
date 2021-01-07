@@ -127,14 +127,36 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the  Ansible ELK Installation and VM Configuration file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the [Ansible ELK Installation and VM Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml) file to **/etc/ansible/files.
+- Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add pyhton by using the command 'ansible_python_interpreter=/usr/bin/python3'
+- Run the playbook, and navigate to **WorkstationIP":5601** (Kibana) to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+###Questions
+
+- _Which file is the playbook? 
+
+- **Filebeat**
+[Ansible Filebeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml)
+
+- **Metricbeat**
+[Ansible Metricbeat Playbook](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml)
+
+Where do you copy it?
+
+/etc/ansible/files
+
+- _Which file do you update to make Ansible run the playbook on a specific machine? 
+
+[Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts)
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
+You navigate into /etc/ansible you edit the hosts file using 'nano hosts' and then add your vms ip using the command "Web1/Web2 private ip" ansible_python_interpreter=/usr/bin/python3 and then save it  
+
 - _Which URL do you navigate to in order to check that the ELK server is running?
+
+http://52.176.50.128:5601/app/kibana http://(your Public IP):5601/app/kibana
+
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
