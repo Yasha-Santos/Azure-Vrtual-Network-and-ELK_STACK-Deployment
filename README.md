@@ -108,7 +108,8 @@ docker, which is the Docker Python pip module.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance. 
 
 ![](/Images/Docker_ps_output.png)
-**DOnt Foget To Use sudo when using docker**
+
+**Dont Foget To Use sudo when using docker**
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
