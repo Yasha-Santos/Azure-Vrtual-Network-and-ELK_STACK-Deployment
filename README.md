@@ -151,7 +151,7 @@ Where do you copy it to?
 
  `/etc/ansible/files`
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? 
+- Which file do you update to make Ansible run the playbook on a specific machine? 
 
 [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts)
 
@@ -226,5 +226,56 @@ The key's randomart image is:
 
 **After Downloading it list the available images with the command:**
 - `sudo docker container list -a`
+
+**You have to create a container with the image we got, so we should use the command with the image/elk name**
+- `sudo docker run cyberxsecurity/elk`
+  - After running you start it using the command: `docker start "Container Name"`
+  
+  **After all this is done we have to do the most imporant part of the the elk deployment, that is modifying the [Ansible Hosts File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) and editing the remote_user line so you can deploy all programs into it.
+
+- Modifying the `hosts` file
+  -You have to got to `/etc/ansible/` use the command `sudo nano hosts` and then just change the file and add your vm's private ip, your output should be something like this:
+```
+[webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+10.0.0.9 ansible_python_interpreter=/usr/bin/python3
+10.0.0.10 ansible_python_interpreter=/usr/bin/python3
+```
+
+-Remote user
+  **This part may be a little hard because you have to fin the remote_user line, so using `cat` and `grep` should help you to find it with ease**
+  
+`nano /etc/ansible/ansible.cfg`
+
+  *After you've done this the line that youre looking for should be something like this*
+
+```
+# default user to use for playbooks if user is not specified
+# (/usr/bin/ansible will use current user as default)
+remote_user = azureuser
+```
+  - You can change the sysadmin name to whatever name your machine is assigned, for example mine is azureuser
+
+**After this you can run your [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml) with the command `ansible-playbook my-playbook.yml`
+
+### For Filebeat and Metricbeat
+
+**Filebeat installer**
+
+Login to Kibana, navigate to Logs and after should be: Add log data > System logs > DEB > Getting started 
+Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb` (Youre going to need this to install the filebeat)
+
+**We already have our [Ansible Filebeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml) and [Ansible Filebeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/Filebeat-config.yml) so it should be easier fot you to have all of it ready**
+
+**Metricbeat installer**
+
+Login to Kibana > Add Metric Data > Docker Metrics > DEB > Getting Started
+Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb`
+
+**Also like filebeat we already have [Ansible Metricbeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml) and  [Ansible Metricbeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)
+
 
 
