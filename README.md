@@ -220,8 +220,11 @@ The key's randomart image is:
            └─13421 docker-containerd --config /var/run/docker/containerd/containerd.toml
  ```
  
-### Download the ELK container from the repository usiing the command:
+### Download the ELK container from the repository using the command:
 
 `sudo docker pull cyberxsecurity/elk`
+
+**After Downloading it list the available images with the command:**
+- `sudo docker container list -a`
 
 
