@@ -268,14 +268,14 @@ remote_user = azureuser
 Login to Kibana, navigate to Logs and after should be: Add log data > System logs > DEB > Getting started 
 Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb` (Youre going to need this to install the filebeat)
 
-**We already have our [Ansible Filebeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml) and [Ansible Filebeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/Filebeat-config.yml) so it should be easier fot you to have all of it ready**
+  - **We already have our [Ansible Filebeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/filebeat-playbook.yml) and [Ansible Filebeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/Filebeat-config.yml) so it should be easier fot you to have all of it ready**
 
 **Metricbeat installer**
 
 Login to Kibana > Add Metric Data > Docker Metrics > DEB > Getting Started
 Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb`
 
-**Also like filebeat we already have [Ansible Metricbeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml) and  [Ansible Metricbeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)**
+  - **Also like filebeat we already have [Ansible Metricbeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml) and  [Ansible Metricbeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)**
 
 
 
