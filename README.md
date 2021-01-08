@@ -247,9 +247,8 @@ The key's randomart image is:
 10.0.0.9 ansible_python_interpreter=/usr/bin/python3
 10.0.0.10 ansible_python_interpreter=/usr/bin/python3
 ```
-
 - Remote user
-  **This part may be a little hard because you have to fin the remote_user line, so using `cat` and `grep` should help you to find it with ease**
+**This part may be a little hard because you have to fin the remote_user line, so using `cat` and `grep` should help you to find it with ease**
   
 `nano /etc/ansible/ansible.cfg`
 
