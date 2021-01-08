@@ -278,4 +278,10 @@ Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/
   - **Also like filebeat we already have [Ansible Metricbeat Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-playbook.yml) and  [Ansible Metricbeat Config File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/metricbeat-config.yml)**
 
 
+## Commands Used
+
+| Command| Function|
+|---------|----------|
+| `ssh-keygen` | create a ssh key|
+
 
