@@ -289,8 +289,8 @@ Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/
 | `ssh-keygen` | Create a ssh key|
 | `sudo apt install docker.io` | Install docker |
 | `curl` | Is basically search in websites and/or download an application like we just did |
-| `sudo docker pull cyberxsecurity/ansible` | Donwload the docker file |
+| `sudo docker pull cyberxsecurity/ansible` | Download the docker file |
 |`sudo docker ps -a` | List all containers |
 | `nano` |Just like word editing program like Microsoft word but for command line and for scripts|
-|`sudo docker start "Container Name"` | starts the container chosen|
-|`sudo docker attach "Container Name"` | connection/loging into the container|
+|`sudo docker start "Container Name"` | Starts the container that has been chosen|
+|`sudo docker attach "Container Name"` | Connection/loging into the container|
