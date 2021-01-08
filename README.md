@@ -287,8 +287,8 @@ Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/
 
 | Command| Function|
 |---------|----------|
-| `ssh-keygen` | create a ssh key|
-| `sudo apt install docker.io` | install docker |
-| `curl` | is basically search in websites and/or download an application like we just did |
-| `sudo docker pull cyberxsecurity/ansible` | Donload the docker file |
-|`sudo docker ps -a` | list all containers |
+| `ssh-keygen` | Create a ssh key|
+| `sudo apt install docker.io` | Install docker |
+| `curl` | Is basically search in websites and/or download an application like we just did |
+| `sudo docker pull cyberxsecurity/ansible` | Donwload the docker file |
+|`sudo docker ps -a` | List all containers |
