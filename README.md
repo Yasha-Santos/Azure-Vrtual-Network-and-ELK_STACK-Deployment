@@ -157,7 +157,7 @@ Where do you copy it to?
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
-You navigate into /etc/ansible you edit the hosts file using 'nano hosts' and then add your vms ip using the command "Web1/Web2 private ip" ansible_python_interpreter=/usr/bin/python3 and then save it  
+You navigate into `/etc/ansible` you edit the hosts file using the command `nano hosts` and then add your vms private ip under the `[Webservers]` row and adding `"Web1/Web2 private ip" ansible_python_interpreter=/usr/bin/python3` and then save it. `Exapmle: 10.0.0.10 ansible_python_interpreter=/usr/bin/python3`   
 
 - Which URL do you navigate to in order to check that the ELK server is running?
 
