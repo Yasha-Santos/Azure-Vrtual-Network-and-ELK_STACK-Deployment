@@ -264,7 +264,7 @@ remote_user = azureuser
 
 **After this you can run your [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml) with the command `ansible-playbook my-playbook.yml`
 
-You can run `sudo docker attach (image name)` to attach to your docker
+You can run `sudo docker attach "Container Name"` to attach to your docker
 
 ### For Filebeat and Metricbeat
 
@@ -292,3 +292,6 @@ Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/
 | `curl` | Is basically search in websites and/or download an application like we just did |
 | `sudo docker pull cyberxsecurity/ansible` | Donwload the docker file |
 |`sudo docker ps -a` | List all containers |
+| `nano` |Just like word editing program like Microsoft word but for command line and for scripts|
+|`sudo docker start "Container Name"` | starts the container chosen|
+|`sudo docker attach "Container Name"` | connection/loging into the container|
