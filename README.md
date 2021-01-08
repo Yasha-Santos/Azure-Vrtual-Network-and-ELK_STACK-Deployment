@@ -234,7 +234,7 @@ The key's randomart image is:
   **To list all active/inactive containers  you can use the command**
 - `sudo docker ps`
   
-  **After all this is done we have to do the most imporant part of the the elk deployment, that is modifying the [Ansible Hosts File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) and editing the remote_user line so you can deploy all programs into it.
+  **After all this is done we have to do the most imporant part of the the elk deployment, that is modifying the [Ansible Hosts File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) and editing the remote_user line so you can deploy all programs into it.**
 
 - Modifying the `hosts` file
   -You have to got to `/etc/ansible/` use the command `sudo nano hosts` and then just change the file and add your vm's private ip, your output should be something like this:
