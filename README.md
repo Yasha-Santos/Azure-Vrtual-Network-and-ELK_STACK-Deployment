@@ -247,8 +247,8 @@ The key's randomart image is:
 10.0.0.9 ansible_python_interpreter=/usr/bin/python3
 10.0.0.10 ansible_python_interpreter=/usr/bin/python3
 ```
-- Remote user
-**This part may be a little hard because you have to fin the remote_user line, so using `cat` and `grep` should help you to find it with ease**
+
+**For the `remote_user` part may be a little hard because you have to fin the remote_user line, so using `cat` and `grep` should help you to find it with ease**
   
 `nano /etc/ansible/ansible.cfg`
 
@@ -261,7 +261,7 @@ remote_user = azureuser
 ```
   - You can change the sysadmin name to whatever name your machine is assigned, for example mine is azureuser
 
-**After this you can run your [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml) with the command `ansible-playbook my-playbook.yml`
+**After this you can run your [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml) with the command `ansible-playbook my-playbook.yml`**
 
 You can run `sudo docker attach "Container Name"` to attach to your docker
 
