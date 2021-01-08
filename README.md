@@ -197,7 +197,7 @@ The key's randomart image is:
 
 ### Install Docker if you dont have it already
 
-`sudo apt-get install -y docker-ce`
+`sudo apt-get install -y docker.io`
 
 **Start it and check it if its running** 
 
@@ -222,14 +222,17 @@ The key's randomart image is:
  
 ### Download the ELK container from the repository using the command:
 
-`sudo docker pull cyberxsecurity/elk`
+`sudo docker pull cyberxsecurity/ansible`
 
 **After Downloading it list the available images with the command:**
 - `sudo docker container list -a`
 
 **You have to create a container with the image we got, so we should use the command with the image/elk name**
-- `sudo docker run cyberxsecurity/elk`
+- `sudo docker run cyberxsecurity/ansible`
   - After running you start it using the command: `docker start "Container Name"`
+  
+  **To list all active/inactive containers  you can use the command**
+- `sudo docker ps`
   
   **After all this is done we have to do the most imporant part of the the elk deployment, that is modifying the [Ansible Hosts File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) and editing the remote_user line so you can deploy all programs into it.
 
@@ -261,6 +264,8 @@ remote_user = azureuser
 
 **After this you can run your [Ansible Playbook File](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/my-playbook1.yml) with the command `ansible-playbook my-playbook.yml`
 
+You can run `sudo docker attach (image name)` to attach to your docker
+
 ### For Filebeat and Metricbeat
 
 **Filebeat installer**
@@ -283,5 +288,7 @@ Copy the command/link: `curl -L -O https://artifacts.elastic.co/downloads/beats/
 | Command| Function|
 |---------|----------|
 | `ssh-keygen` | create a ssh key|
-
-
+| `sudo apt install docker.io` | install docker |
+| `curl` | is basically search in websites and/or download an application like we just did |
+| `sudo docker pull cyberxsecurity/ansible` | Donload the docker file |
+|`sudo docker ps -a` | list all containers |
