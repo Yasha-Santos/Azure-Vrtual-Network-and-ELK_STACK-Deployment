@@ -109,7 +109,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![](/Images/Docker_ps_output.png)
 
-**Dont Foget To Use sudo when using docker**
+**Don't Forget To Use sudo when using docker**
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
