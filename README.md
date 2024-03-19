@@ -134,7 +134,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 - Copy the [Ansible ELK Installation and VM Configuration](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/ELK_STACK/install-elk.yml) file to **/etc/ansible/files.
-- Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add pyhton by using the command `ansible_python_interpreter=/usr/bin/python3`
+- Update the [Ansible Hosts](https://github.com/Yasha-Santos/Azure-Vrtual-Network-and-ELK_STACK-Deployment/blob/main/Ansible/hosts) file to include Web1 and Web2 private addresses, and add python by using the command `ansible_python_interpreter=/usr/bin/python3`
 - Run the playbook, and navigate to **WorkstationIP":5601** (Kibana) to check that the installation worked as expected.
 
 ### Frequently asked questions
