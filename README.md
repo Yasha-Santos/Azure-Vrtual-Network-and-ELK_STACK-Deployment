@@ -28,7 +28,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly protected by helping or defending the system from DDoS attacks by shifting attack traffic from the corporate server to a public cloud provider, in addition to restricting traffic to the network, a jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments, meaning that you can only connect to your workspace by connecting to the jumbox first because its protected with firewals and etc,.
+Load balancing ensures that the application will be highly protected by helping or defending the system from DDoS attacks by shifting attack traffic from the corporate server to a public cloud provider, in addition to restricting traffic to the network, a jump box is a secure computer that all admins first connect to, before launching any administrative task or use as an origination point to connect to other servers or untrusted environments, meaning that you can only connect to your workspace by connecting to the jumbox first because its protected with firewals and etc,.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 
